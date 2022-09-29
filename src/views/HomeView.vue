@@ -1,12 +1,44 @@
 <template>
-    <h1>Welcome to my first vue app !</h1>
-    <ComponentGraph />
+    <div class="home">
+        <h1>Retrouvez ici mes derniers projets !</h1>
+        <div class="cardGrid">
+            <ComponentCard
+                title="Crypto Tracker"
+                text="Petite application pour suivre tes crypto favorites"
+                img="crypto.png"
+                link="/crypto-tracker"
+                link_msg="Voir le projet"
+            />
+            <ComponentCard
+                title="???"
+                text="projet en cours de réalisation !"
+                img="black-hole.png"
+            />
+
+            <ComponentCard
+                title="???"
+                text="projet en cours de réalisation !"
+                img="black-hole.png"
+            />
+        </div>
+    </div>
 </template>
 
 <script>
-import ComponentGraph from '@/components/ComponentGraph.vue';
+import ComponentCard from '@/components/ComponentCard.vue';
 export default {
     name: 'HomeView',
-    components: { ComponentGraph },
+    components: { ComponentCard },
 };
 </script>
+
+<style>
+.home .cardGrid {
+    padding: 100px 400px 50px 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 400px;
+    grid-row-gap: 100px;
+}
+</style>

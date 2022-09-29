@@ -36,10 +36,6 @@ export default {
 </script>
 
 <style>
-ul {
-    list-style: none;
-}
-
 .cardGrid {
     padding: 200px;
     display: grid;

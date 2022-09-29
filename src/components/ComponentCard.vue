@@ -59,8 +59,7 @@ export default {
 
 .Card .imgDiv .CardImg {
     display: flex;
-    min-width: 10%;
-    max-width: 30%;
+    max-height: 170px;
 }
 
 .Card a {
