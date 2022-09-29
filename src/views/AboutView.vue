@@ -1,6 +1,11 @@
 <template>
     <div class="about">
-        <img class="bigProfilePicture" src="images/me.jpg" alt="" />
+        <ComponentImageHover
+            img1="images/me.jpg"
+            alt1="Cat with a hat"
+            img2="images/pfp.png"
+            alt2="Cat with a hat"
+        />
 
         <h1>Salut ...</h1>
         <p>Je m'appelles Thomas et je suis développeur</p>
@@ -26,19 +31,14 @@
 
 <script>
 import ComponentFAQ from '@/components/ComponentFAQ.vue';
+import ComponentImageHover from '@/components/ComponentImageHover.vue';
 export default {
     name: 'AboutView',
-    components: { ComponentFAQ },
+    components: { ComponentFAQ, ComponentImageHover },
 };
 </script>
 
 <style>
-.bigProfilePicture {
-    margin-top: 50px;
-    border-radius: 300px;
-    max-width: 20%;
-}
-
 .faqDiv {
     margin-top: 30px;
     display: flex;
