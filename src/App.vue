@@ -10,9 +10,14 @@
 
 <script>
 import ComponentFooter from './components/ComponentFooter.vue';
+import AOS from 'aos';
+
 export default {
     name: 'App',
     components: { ComponentFooter },
+    mounted() {
+        AOS.init();
+    },
 };
 </script>
 

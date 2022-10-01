@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ContactView from '../views/ContactView.vue';
 import CryptoTrackerVue from '../views/CryptoTrackerVue.vue';
+import CryptoInfoVue from '../views/CryptoInfoVue.vue';
 
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
         path: '/crypto-tracker',
         name: 'crypto-tracker',
         component: CryptoTrackerVue,
+    },
+    {
+        path: '/crypto-tracker/:id',
+        name: ':id',
+        component: CryptoInfoVue,
     },
 ];
 
